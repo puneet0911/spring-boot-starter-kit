@@ -24,24 +24,27 @@ A **production-ready boilerplate** for building secure, scalable Spring Boot app
 
 text
 src/main/java/com/yourorg/starterkit/
-
-  ├── controller 
-  ├── service
-  ├── repository
-  ├── model
-  └── config
-src/main/resources/
-  └── application.properties
-src/test/java/com/yourorg/starterkit/
-controller/ — REST API endpoints
-
-service/ — Business logic
-
-repository/ — Data access with Spring Data JPA
-
-model/ — Entity and DTO classes
-
-config/ — Configuration beans
+```
+├── src
+│ ├── main
+│ │ ├── java
+│ │ │ └── com
+│ │ │ └── example
+│ │ │ ├── config
+│ │ │ ├── controller
+│ │ │ ├── entity
+│ │ │ ├── repository
+│ │ │ ├── security
+│ │ │ └── service
+│ │ └── resources
+│ │ ├── application.yml
+│ │ └── static/templates
+│ └── test
+│ └── java/com/example
+├── docker-compose.yml
+├── build.gradle / pom.xml
+└── README.md
+```
 
 [1]
 
