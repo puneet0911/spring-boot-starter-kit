@@ -1,27 +1,31 @@
-spring-boot-starter-kit
-A clean, production-ready boilerplate for building Java backend services and REST APIs with Spring Boot. Designed for easy onboarding, scalability, and adherence to best practices.
+# Spring Boot Starter Kit
 
-🚀 Features
-Spring Boot (latest stable version)
+A **production-ready boilerplate** for building secure, scalable Spring Boot applications with opinionated configurations and a modular project structure[1][2].
 
-RESTful API template
+---
 
-Layered architecture (Controller, Service, Repository, Entity)
+## Features
 
-Centralized exception handling
+- **Spring Boot 3.x** ready
+- Configured **Gradle/Maven** build system
+- Supports **JWT authentication** and role-based access
+- RESTful API structure with layered application modules
+- Integrated **CORS** and security middleware
+- Basic **entity management** and validation
+- **H2 in-memory database** for development
+- Docker support with `docker-compose.yml`
+- Sample API endpoints and integration tests
+- Preconfigured documentation with **Swagger UI**
 
-Validation with Hibernate Validator
+---
 
-Basic test setup (JUnit, Mockito)
+## Folder Structure
 
-Example configuration
 
-Ready for Docker and CI/CD integration
-
-🏗️ Folder Structure
 text
 src/main/java/com/yourorg/starterkit/
-  ├── controller
+
+  ├── controller 
   ├── service
   ├── repository
   ├── model
@@ -39,55 +43,60 @@ model/ — Entity and DTO classes
 
 config/ — Configuration beans
 
-⚡ Getting Started
-Prerequisites
-Java 17 or newer
+[1]
 
-Maven 3.8+ (or Gradle 7+, if preferred)
+---
 
-Git
+## Getting Started
 
-Clone & Setup
-bash
-git clone https://github.com/yourorg/spring-boot-starter-kit.git
-cd spring-boot-starter-kit
-Configure
-Edit src/main/resources/application.properties for your environment (database, port, etc).
+### Requirements
 
-Build & Run
-bash
-./mvnw spring-boot:run
-# or, if Maven is installed globally
+- Java 17+
+- Maven/Gradle
+- Docker (optional for containerization)
+
+### Quick Run
+
+
+# Build & Run
+bash  ./mvnw spring-boot:run
+# if Maven is installed globally
 mvn spring-boot:run
 The service will be available at http://localhost:8080 by default.
+[1]
 
-🧪 Running Tests
-bash
-./mvnw test
-# or
-mvn test
-🐳 Docker (Optional)
-To build and run with Docker:
+Access API at: [http://localhost:8080/](http://localhost:8080/)  
+Swagger UI: [http://localhost:8080/swagger-ui/index.html](http://localhost:8080/swagger-ui/index.html)  
+H2 Console: [http://localhost:8080/console](http://localhost:8080/console)
 
-bash
-docker build -t spring-boot-starter-kit .
-docker run -p 8080:8080 spring-boot-starter-kit
-🔧 Customization
-Add additional dependencies via your pom.xml
+### Using Docker
+docker-compose up # To Start
+docker-compose down # To Stop
+[1]
 
-Extend the REST API from controller/
+---
 
-Add business logic in service/
+## Environment Variables
 
-Integrate repositories with your desired database
+Set in `.env` or as system vars:
+- `ADMIN_USERNAME`, `ADMIN_PASSWORD`
+- `JWT_SECRET`
+- `SPRING_PROFILES_ACTIVE`
+- Database and email configs (as required)
 
-🤝 Contributing
-Contributions and issue reports are welcome! Please open a pull request or file an issue for bugs or suggestions.
+---
 
-📝 License
-This project is licensed under the MIT License — see the LICENSE file for details.
+## Contributing
 
-🙏 Acknowledgements
+Feel free to create issues and pull requests for improvements and fixes.
+
+---
+
+## License
+
+Released under the MIT License.
+
+## 🙏 Acknowledgements
 Spring Boot Documentation
 
 Community boilerplates and contributors
