@@ -62,9 +62,13 @@ src/main/java/com/yourorg/starterkit/
 
 
 # Build & Run
+```
 bash  ./mvnw spring-boot:run
+```
 # if Maven is installed globally
+```
 mvn spring-boot:run
+```
 The service will be available at http://localhost:8080 by default.
 [1]
 
