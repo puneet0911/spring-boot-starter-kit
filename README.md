@@ -13,9 +13,7 @@ A **production-ready boilerplate** for building secure, scalable Spring Boot app
 - Integrated **CORS** and security middleware
 - Basic **entity management** and validation
 - **H2 in-memory database** for development
-- Docker support with `docker-compose.yml`
 - Sample API endpoints and integration tests
-- Preconfigured documentation with **Swagger UI**
 
 ---
 
