@@ -40,7 +40,7 @@ src/main/java/com/yourorg/starterkit/
 │ └── test
 │ └── java/com/example
 ├── docker-compose.yml
-├── build.gradle / pom.xml
+├── pom.xml
 └── README.md
 ```
 
@@ -53,7 +53,7 @@ src/main/java/com/yourorg/starterkit/
 ### Requirements
 
 - Java 17+
-- Maven/Gradle
+- Maven
 - Docker (optional for containerization)
 
 ### Quick Run
