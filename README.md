@@ -68,7 +68,7 @@ bash  ./mvnw spring-boot:run
 mvn spring-boot:run
 ```
 The service will be available at http://localhost:8080 by default.
-[1]
+
 
 Access API at: [http://localhost:8080/](http://localhost:8080/)  
 Swagger UI: [http://localhost:8080/swagger-ui/index.html](http://localhost:8080/swagger-ui/index.html)  
